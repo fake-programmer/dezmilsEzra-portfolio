@@ -3,39 +3,277 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>about Dezmils</title>
+    <title>Dezmils studioz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <a href="#" class="logo"><i class="services"></i>DEZMILS portfolio</a>
-   
-    <nav class="navbar">
-        <a  href="index.html">Home</a>
-        <a  href="details.html">personal skills</a>
-        <a class="active"href="about.html">about</a> 
+    <style>
+        :root{
+    --orange:aqua;
+    --black:#f7f7fa;
+    --blue:aqua;
+    --white:#f8f5f5;
+    --background:#000414;
+    --BROWN: #ce3506 ;
+    --box-shadow: 0.5rem 1.3rem rgba(253, 252, 252, 0.171);
+
+}
+        body {
+            font-family:  'Arial Narrow Bold', sans-serif;
+            margin: 0;
+            background-color: var(--background);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--background);
+            color: var(--blue);
+            padding: 0 10px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            width: 100%;
+        }
+        header h1{
+            text-align: center;
+            background:linear-gradient(55deg, aqua ,rgb(3, 207, 207) ,#0a90dd, #a9e9e0 , rgb(29, 187, 187), aqua );
+            font-size: 2.5rem;
+            font-weight: 900;
+             background-size: 200% 200% ;
+             background-position: 400 400;
+             -webkit-background-clip: text; 
+             color: transparent;
+             animation: glowing 5s linear infinite; 
+             font-family:  'Arial Narrow Bold', sans-serif;
+
+        }
+        nav {
+            background-color: var(--background);
+            padding: 10px;
+            box-shadow: var(--box-shadow);
+            width: 100%;
+        }
+
+        nav ul {
+            background-color: var(--background);
+            border-radius: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* For horizontal navigation on larger screens */
+            justify-content: space-around;
+        }
+        nav li {
+            margin: 0 10px;
+            background-color: var(--background);
+            border-radius: 10px;
+           
+        }
+        nav a.active,
+        nav li:hover {
+            background-color: var(--blue);
+            border-radius: 3px;
+            padding: 7px;
+           
+        }
+       
+
+        nav a {
+            text-decoration: none;
+            color: var(--blue);
+        }
+        nav a.active,
+        nav a:hover {
+            text-decoration: none;
+            color: var(--background);
+        }
+      
+        main {
+            display: flex; /* For sidebar and content layout on larger screens */
+            margin-top: 20px;
+        }
+
+        @keyframes glowing{0%
+    {
+        background-position: 100% 0;
+       
+    }50%{
+        background-position: -100% 0;
+       
+    
+    }100%{
+        background-position: 100% 0;
+       
+    
+    }}
+           
+        .sidebar {
+            text-align: center;
+            width: 25%;
+            padding: -2px;
+            background-color:var(--background);
+            color: var(--blue); 
+            font-family:  'Arial Narrow Bold', sans-serif;
+            border-radius: 15px;
+            box-shadow: 0 0 3px 3px rgba(0, 195, 255, 0.151);
+        }
+        @keyframes glowing{0%
+    {
+        background-position: 100% 0;
+       
+    }50%{
+        background-position: -100% 0;
+       
+    
+    }100%{
+        background-position: 100% 0;
+       
+    
+    }}
+    .sidebar h3{
+       font-size: 1.2rem;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sidebar p{
+        color: var(--black);
+    }
+
+        .content {
+            align-items: center;
+            width: 75%;
+            padding: 20px;
+            color: var(--black);
+        }
+        .content p{
+            align-items: center;
+            width: 85%;
+            padding-right: 20px;
+            color: var(--black);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+
+        footer {
+            background-color:var(--BROWN) ;
+            color: var(--black);
+            text-align: center;
+            padding: 5px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        footer li{
+            text-decoration: none;
+        }
+        footer a{
+            color: #f7f7fa;
+        }
+        footer h6{
+          padding: 0;
+          margin: 0;
+          
+        }
+        footer ul{
+            border-radius: 15px;
+            color: var(--black);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* For horizontal navigation on larger screens */
+            justify-content: space-evenly;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; /* Stack sidebar and content vertically */
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: row; /* Stack navigation items vertically */
+                align-items: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+            .sidebar{
+               display: none;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DEZMILS EZRA </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a  href="index.html">Home</a></li>
+            <li><a href="details.html">Personal Skills</a></li>
+            <li><a class="active" href="about.html">About</a></li>
+           
+            
+            
+            
+        </ul>
     </nav>
-</header>
-</header>
-<body> 
-<section class="Home" id="Home">
-    <div class="img">
-        <img src="dd.png" alt=""></div>
-        </div>
-    <div class="home-content">
-        <p>i am currently a student at the great "maseno university" taking pure mathematics and computer science. the two disciplines sprinkle junks of flavourable salt to my graphic design journey as they open my creativity to infinity. i actively take part in clubs and societies where i gain lots of collaboration skills and team working. im in so much love with MUCISA an association that has made this my portfolio dream come true. 
-        </p>
-        <p>
-         as early stated, i am a dynamic and multifaceted graphic designer whose creative prowess extends across the full spectrum of design and development, i craft my work of art using the latest versions of graphic design softwares: </p>
-          <li>Adobe photoshop</li>
-          <li>Adobe illustrator</li>
-          <li>Adobe after effects</li>
-          <li>Adobe premier pro</li>
-          <li>corel draw</li>
 
-          <p>
-            thank you for viewing my page!!!!....its still under maintanance </p>
+    <div class="container">
+        <main>
+            <article class="content">
+                <h2>personal <details></details></h2>
+                <img src="dd.png" alt="home image">
+                <p>I am currently a student at the great "MASENO UNIVERSITY" taking pure mathematics and computer science. My graphic design jouney started immediately I finished my form four the year 2022.I have managed to achieve tremendous goal in the field with the help of mathematical skills and tech skills.I actively take part in clubs and societies where I gather lots of collaboration skills and team working. I'm in so much love with MUCISA an association that has made this my portfolio project dream come true. 
+                </p>
+                <p>
+                    As early stated, i am a dynamic and multifaceted graphic designer whose creative prowess extends across the full spectrum of design and development, i craft my work of art using the latest versions of graphic design softwares: </p>
+                    <li>Adobe photoshop</li>
+                    <li>Adobe illustrator</li>
+                    <li>Adobe after effects</li>
+                    <li>Adobe premier pro</li>
+                    <li>corel draw</li>
+          
+                <p>
+                      Thank you for viewing my page!!!!....its still under maintanance
+                 </p>    
+            </article>
+        </main>
+    </div>
 
-  
+    <footer>
+        <h6>&copy; Dezmils Ezra portfolio 2025</h6>
+        <h6>follow me on</h6>
+        <ul>
+           <li><a href="https://www.facebook.com/profile.php?id=61551077543227&mibextid=rS40aB7S9Ucbxw6v"><i class='bx bxl-facebook-circle'> </i></a></li> 
+            <li><a href="https://x.com/DezmilsE"><i class='bx bxl-twitter'> </i></a></li>
+           <li><a href="https://vm.tiktok.com/ZMkoX17Kk/"><i class='bx bxl-tiktok'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dezmil-ezra-578906317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i> </a> </li>
+           <li><a href="https://www.instagram.com/dezmils_ezra/?hl=en"><i class='bx bxl-instagram-alt' ></i> </a></li> 
+        </ul>
+    </footer>
 </body>
+</html>

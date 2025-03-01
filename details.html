@@ -3,77 +3,382 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>dezmils' skills and experience</title>
+    <title>Dezmils studioz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
 </head>
-<header>
-    <a href="#" class="logo"><i class="services"></i>DEZMILS portfolio</a>
-   
-    <nav class="navbar">
-        <a  href="index.html">Home</a>
-        <a class="active" href="person.html">personal skills</a>
-        <a href="about.html">about</a> 
-    </nav>
-</header>
+    <style>
+        :root{
+    --orange:aqua;
+    --black:#f7f7fa;
+    --blue:aqua;
+    --white:#f8f5f5;
+    --background:#000414;
+    --BROWN: #ce3506 ;
+    --box-shadow: 0.5rem 1.3rem rgba(253, 252, 252, 0.171);
 
-<div class="grid4">
-    <h1 class="personal" >personal skills $ creative fields </fieldset></h1>
-</div>
-<div class="grid">
-    <div class="grid1">
-        <label class="label"  for="time">Time management</label>
-        <label class="label" for="time">Communication skills</label>
-        <label class="lb"  for="time">meeting deadlines and managing multiple projects efficiently</label>
-        <label class="lb" for="time">understanding client's need and presenting ideas clearly</label>
-        <label class="label" for="time">collaboration</label>
-        <label class="label"  for="time">Patience& Perseverance</label>
-        <label class="lb" for="time">working well with clients, marketers and other creatives</label>
-        <label class="lb"  for="time">reworking designs to clientsatisfaction</label>
-        <label class="label" for="time">willing to learn</label>
-        <label class="label" for="time">emphathy</label>
-        <label class="lb" for="time">constantly improving and exploring new design ideas</label>
-        <label class="lb" for="time">designing with the audience's perspective mind</label>
-       
-      </div>
+}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--background);
+        }
 
-      <div class="grid2">
-        <div class="grid3">
-            <label class="label"  for="time">branding</label>
-            <label class="label" for="time">visual identity</label>
-            <label class="label"  for="time">poster design</label>
-            <label class="label" for="time">adverts</label>
-            <label class="label" for="time">logo design</label>
-            <label class="label"  for="time">package design</label>
-            <label class="label" for="time">print design</label>
-            <label class="label"  for="time">letter heads</label>
-            <label class="label" for="time">social media design</label>
-            <label class="label" for="time">brochure design</label>
-            <label class="label" for="time">motion graphics</label>
-           </div>
-           <div class="grid3">
-            <label class="lb" for="time">contacts:  Email:  </label>
-            <label class="lb" for="time">whatsapp/call:  dez.ezra05@gmail.com</label>
-            <label class="lb" for="time">0712310100 </label>
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--background);
+            color: var(--blue);
+            padding: 0 10px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            width: 100%;
+        }
+        header h1{
+            text-align: center;
+            background:linear-gradient(55deg, aqua ,rgb(3, 207, 207) ,#0a90dd, #a9e9e0 , rgb(29, 187, 187), aqua );
+            font-size: 2.5rem;
+            font-weight: 900;
+             background-size: 200% 200% ;
+             background-position: 400 400;
+             -webkit-background-clip: text; 
+             color: transparent;
+             animation: glowing 5s linear infinite; 
+             font-family:  'Arial Narrow Bold', sans-serif;
+
+        }
+        nav {
+            background-color: var(--background);
+            padding: 10px;
+            box-shadow: var(--box-shadow);
+            width: 100%;
+        }
+
+        nav ul {
+            background-color: var(--background);
+            border-radius: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* For horizontal navigation on larger screens */
+            justify-content: space-around;
+        }
+        nav li {
+            margin: 0 10px;
+            background-color: var(--background);
+            border-radius: 10px;
            
-           </div>
-      </div>
+        }
+        nav a.active,
+        nav li:hover {
+            background-color: var(--blue);
+            border-radius: 3px;
+            padding: 7px;
+           
+        }
+       
 
-  
-</div>
+        nav a {
+            text-decoration: none;
+            color: var(--blue);
+        }
+        nav a.active,
+        nav a:hover {
+            text-decoration: none;
+            color: var(--background);
+        }
+      
+        main {
+            display: flex; /* For sidebar and content layout on larger screens */
+            margin-top: 20px;
+        }
 
+        @keyframes glowing{0%
+    {
+        background-position: 100% 0;
+       
+    }50%{
+        background-position: -100% 0;
+       
+    
+    }100%{
+        background-position: 100% 0;
+       
+    
+    }}
+           
+        .sidebar {
+            text-align: center;
+            width: 25%;
+            padding: -2px;
+            background-color:var(--background);
+            color: var(--blue); 
+            font-family:  'Arial Narrow Bold', sans-serif;
+            border-radius: 15px;
+        }
+        @keyframes glowing{0%
+    {
+        background-position: 100% 0;
+       
+    }50%{
+        background-position: -100% 0;
+       
+    
+    }100%{
+        background-position: 100% 0;
+       
+    
+    }}
+    .personal{
+           text-align:center;
+            align-content: center;
+            max-width: 50rem;
+            background:linear-gradient(55deg, aqua ,rgb(3, 207, 207) ,#0a90dd, #05b8c5 , rgb(29, 187, 187), aqua );
+            background-size: 200% 200% ;
+            background-position: 700 700;
+            -webkit-background-clip: text; 
+            color: transparent;
+            animation: glowing 10s linear infinite; 
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            border-radius: 10px;
+            box-shadow: 0 0 3px 3px rgba(0, 195, 255, 0.151);
+        
+        
+        }
 
+    .sidebar h3{
+       font-size: 1.2rem;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sidebar p{
+        color: var(--black);
+    }
+
+        .content {
+            align-items: center;
+            width: 75%;
+            padding: 20px;
+            color: var(--black);
+        }
+        .content p{
+            align-items: center;
+            width: 85%;
+            padding-right: 20px;
+            color: var(--black);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+        .grid1{
+            display: grid;
+            grid-template-columns: repeat(2,1fr);
+            max-width: 30rem;
+            margin: 0;
+            margin-top: 1rem;
+            font-size: medium;
+            grid-column-gap: 1rem;
+            grid-row-gap:10px ;
+            background-color: var(--background);
+            border-radius: 25px;
+            box-shadow: 0 0 3px 3px rgba(0, 195, 255, 0.151);
+            padding: 5px;
+        }
+        .grid3{
+            display: grid;
+            text-align: center;
+            grid-template-columns: repeat(3,1fr);
+            max-width: 35rem;
+            font-size: medium;
+            grid-column-gap: 5px;
+            grid-row-gap:5px ;
+            background-color: var(--background);
+            border-radius: 25px;
+            box-shadow: 0 0 3px 3px rgba(0, 195, 255, 0.151);
+            padding: 7px;
+
+        
+        }
+        .label{
+            text-align: center;
+            padding: 2px 2px;
+            font-size: 16px;
+            font-weight: 700;
+            background-color: transparent;
+            border: 3px solid transparent ;
+            border-color: var(--blue);
+            border-radius: 10px;
+            color: var(--black);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-top:1rem;
+            margin-bottom:0;
+            
+        }
+        .lb{
+           color: var(--white);
+           font-size: 16px;
+           margin-left: 1rem;
+           margin-bottom: 1.5rem;
+        }
+
+        footer {
+            background-color:var(--BROWN) ;
+            color: var(--black);
+            text-align: center;
+            padding: 5px;
+            margin-top: 20px;
+            width: 100%;
+        }
+        footer li{
+            text-decoration: none;
+        }
+        footer a{
+            color: #f7f7fa;
+        }
+        footer h6{
+          padding: 0;
+          margin: 0;
+          
+        }
+        footer ul{
+            border-radius: 15px;
+            color: var(--black);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* For horizontal navigation on larger screens */
+            justify-content: space-evenly;
+        }
+
+        /* Media Queries */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; /* Stack sidebar and content vertically */
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: row; /* Stack navigation items vertically */
+                align-items: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+            .sidebar{
+                max-width: 95%;
+            }
+            .sidebar p{
+              display: none;
+            }
+            .sidebar h1{
+            }
+            .sidebar h3{
+              padding: 4px;
+              font-size: 1.1rem;
+            }
+            .content h1{
+                max-width: 90%;
+            }
+            .grid3{
+                max-width: 80%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DEZMILS EZRA </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a  href="index.html">Home</a></li>
+            <li><a class="active" href="details.html">personal skills</a></li>
+            <li><a href="about.html">about</a></li>
+           
+            
+            
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <aside class="sidebar">
+                <h1 class="personal" >personal skills</h1>
+                <div class="grid1">
+                    <label class="label"  for="time">Time management</label>
+                    <label class="label" for="time">Communication skills</label>
+                    <label class="lb"  for="time">meeting deadlines and managing multiple projects efficiently</label>
+                    <label class="lb" for="time">understanding client's need and presenting ideas clearly</label>
+                    <label class="label" for="time">collaboration</label>
+                    <label class="label"  for="time">Patience& Perseverance</label>
+                    <label class="lb" for="time">working well with clients, marketers and other creatives</label>
+                    <label class="lb"  for="time">reworking designs to clientsatisfaction</label>
+                    <label class="label" for="time">willing to learn</label>
+                    <label class="label" for="time">emphathy</label>
+                    <label class="lb" for="time">constantly improving and exploring new design ideas</label>
+                    <label class="lb" for="time">designing with the audience's perspective mind</label>
+                   
+                  </div>
+            </aside>
+
+            <article class="content">
+                <h1 class="personal" >Creative Fields</h1>
+                <div class="grid3">
+                    <label class="label"  for="time">branding</label>
+                    <label class="label" for="time">adverts</label>
+                    <label class="label" for="time">logo design</label>
+                    <label class="label" for="time">visual identity</label>
+                    <label class="label"  for="time">poster design</label>
+                    <label class="label"  for="time">package design</label>
+                    <label class="label" for="time">print design</label>
+                    <label class="label"  for="time">letter heads</label>
+                    <label class="label" for="time">social media design</label>
+                    <label class="label" for="time">brochure design</label>
+                    <label class="label" for="time">motion graphics</label>
+                    <label class="label" for="time">web development</label>
+                   </div>
+
+                   <p>
+                    samples of my work are soon dropping stay tuned!!!!!
+               </p>    
+            </article>
+        </main>
+    </div>
+
+    <footer>
+        <h6>&copy; Dezmils Ezra portfolio 2025</h6>
+        <h6>follow me on</h6>
+        <ul>
+           <li><a href="https://www.facebook.com/profile.php?id=61551077543227&mibextid=rS40aB7S9Ucbxw6v"><i class='bx bxl-facebook-circle'> </i></a></li> 
+            <li><a href="https://x.com/DezmilsE"><i class='bx bxl-twitter'> </i></a></li>
+           <li><a href="https://vm.tiktok.com/ZMkoX17Kk/"><i class='bx bxl-tiktok'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dezmil-ezra-578906317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i> </a> </li>
+           <li><a href="https://www.instagram.com/dezmils_ezra/?hl=en"><i class='bx bxl-instagram-alt' ></i> </a></li> 
+        </ul>
+    </footer>
 </body>
-<div class="footer">
-<div class="social-media">
-    <a href="#"><i class='bx bxl-facebook-circle'>  faceBook</i></a>
-        <a href="#"><i class='bx bxl-twitter'>  twiter</i></a>
-        <a href="#"><i class='bx bxl-tiktok'></i>  tiktok</a>
-        <a href="#"><i class='bx bxl-linkedin'></i>  linkedin</a>
-        <a href="#"><i class='bx bxl-instagram-alt' ></i>  instagram</a>
-</div>
-
-</div>
-
 </html>

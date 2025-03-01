@@ -6,36 +6,310 @@
     <title>Dezmils studioz</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-    <link rel="stylesheet" href="style.css">
 </head>
-<body >
-    <header>
-        <a href="#" class="logo"><i class="services"></i>DEZMILS portfolio</a>
+    <style>
+        :root{
+    --orange:aqua;
+    --black:#f7f7fa;
+    --blue:aqua;
+    --white:#f8f5f5;
+    --background:#000414;
+    --BROWN: #ce3506 ;
+    --box-shadow: 0.5rem 1.3rem rgba(253, 252, 252, 0.171);
+
+}
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            background-color: var(--background);
+        }
+
+        .container {
+            width: 100%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+        }
+
+        header {
+            background-color: var(--background);
+            color: var(--blue);
+            padding: 0 10px;
+            text-align: center;
+            box-shadow: var(--box-shadow);
+            width: 100%;
+        }
+        header h1{
+            text-align: center;
+            background:linear-gradient(55deg, aqua ,rgb(3, 207, 207) ,#0a90dd, #a9e9e0 , rgb(29, 187, 187), aqua );
+            font-size: 2.5rem;
+            font-weight: 900;
+             background-size: 200% 200% ;
+             background-position: 400 400;
+             -webkit-background-clip: text; 
+             color: transparent;
+             animation: glowing 5s linear infinite; 
+             font-family:  'Arial Narrow Bold', sans-serif;
+
+        }
+        nav {
+            background-color: var(--background);
+            padding: 10px;
+            box-shadow: var(--box-shadow);
+            width: 100%;
+        }
+
+        nav ul {
+            background-color: var(--background);
+            border-radius: 15px;
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* For horizontal navigation on larger screens */
+            justify-content: space-around;
+        }
+        nav li {
+            margin: 0 10px;
+            background-color: var(--background);
+            border-radius: 10px;
+           
+        }
+        nav a.active,
+        nav li:hover {
+            background-color: var(--blue);
+            border-radius: 3px;
+            padding: 7px;
+           
+        }
        
-        <nav class="navbar">
-            <a class="active" href="index.html">Home</a>
-            <a href="details.html">personal skills</a>
-            <a href="about.html">about</a>
-            
-            
-        </nav>
-    </header>
-<body> 
-    <h2 class="get">  get  to  know  me  in  a second</h2>
-<section class="Home" id="Home">
-    <div class="home-content">
-        <h3>i'm </h3>
-        <h1>Dezmils Ezra</h1>
-        <h3>A graphic designer : </h3>
-        <a href="Dezmils Ezra CV.pdf" Download="Mycv.pdf" class="cv">Download cv</a>
-        <a href="#" class="book">book</a>
-        <p>
-          Im a dynamic and multifaceted graphic designer whose creative prowess extends across the full spectrum of design and development where I blend creativity with code, crafting stunning visuals and building innovative software solutions that deliver both beauty and performance. 
-        </p>
+
+        nav a {
+            text-decoration: none;
+            color: var(--blue);
+        }
+        nav a.active,
+        nav a:hover {
+            text-decoration: none;
+            color: var(--background);
+        }
       
+        main {
+            display: flex; /* For sidebar and content layout on larger screens */
+            margin-top: 20px;
+        }
+
+        @keyframes glowing{0%
+    {
+        background-position: 100% 0;
+       
+    }50%{
+        background-position: -100% 0;
+       
+    
+    }100%{
+        background-position: 100% 0;
+       
+    
+    }}
+           
+        .sidebar {
+            text-align: center;
+            width: 25%;
+            padding: -2px;
+            background-color:var(--background);
+            color: var(--blue); 
+            font-family:  'Arial Narrow Bold', sans-serif;
+            border-radius: 15px;
+            box-shadow: 0 0 3px 3px rgba(0, 195, 255, 0.151);
+        }
+        @keyframes glowing{0%
+    {
+        background-position: 100% 0;
+       
+    }50%{
+        background-position: -100% 0;
+       
+    
+    }100%{
+        background-position: 100% 0;
+       
+    
+    }}
+    .sidebar h3{
+       font-size: 1.2rem;
+       font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+    .sidebar p{
+        color: var(--black);
+    }
+
+        .content {
+            align-items: center;
+            width: 75%;
+            padding: 20px;
+            color: var(--black);
+        }
+        .content p{
+            align-items: center;
+            width: 85%;
+            padding-right: 20px;
+            color: var(--black);
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            
+        }
+        .cv{
+             bottom: 100px;
+             text-decoration: none;
+             margin-left: 25%;
+             padding: 10px 20px;
+             font-size: 16px;
+             font-weight: 700;
+             background-color: transparent;
+             border: 3px solid transparent ;
+             border-color: var(--blue);
+             border-radius: 25px;
+             color: var(--black);
+               cursor: pointer;
+              transition: all 0.3s ease;
+      }
+    .cv:hover{
+        background-color: transparent;
+        color: var(--blue);
+         border-color:var(--blue);
+        font-weight: 900;    
+        
+        
+    }
+        
+            
+        footer {
+            background-color:var(--BROWN) ;
+            color: var(--black);
+            text-align: center;
+            padding: 2px;
+            margin-top: 20px;
+            width: 100%;
+            text-align: center;
+        }
+        footer li{
+            text-decoration: none;
+        }
+        footer a{
+            color: #f7f7fa;
+        }
+        footer h6{
+          padding: 0;
+          margin: 0;
+
+        }
+        footer ul{
+            border-radius: 15px;
+            color: var(--black);
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex; /* For horizontal navigation on larger screens */
+            justify-content: space-evenly;
+        }
+        /* Media Queries */
+        @media (max-width: 768px) {
+            main {
+                flex-direction: column; /* Stack sidebar and content vertically */
+            }
+
+            .sidebar {
+                width: 100%;
+            }
+
+            .content {
+                width: 100%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            nav ul {
+                flex-direction: row; /* Stack navigation items vertically */
+                align-items: center;
+            }
+
+            nav li {
+                margin: 10px 0;
+            }
+
+            .container {
+                padding: 10px;
+            }
+            .sidebar{
+                max-width: 95%;
+            }
+            .sidebar p{
+              display: none;
+            }
+            .sidebar h1{
+              display: none;
+            }
+            .sidebar h3{
+              padding: 4px;
+              font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>DEZMILS EZRA </h1>
+    </header>
+
+    <nav>
+        <ul>
+            <li> <a class="active" href="index.html">Home</a></li>
+            <li><a href="details.html">personal skills</a></li>
+            <li><a href="about.html">about</a></li>
+           
+            
+            
+            
+        </ul>
+    </nav>
+
+    <div class="container">
+        <main>
+            <aside class="sidebar">
+                <h3>i'm </h3>
+               <h1>Dezmils Ezra</h1>
+               <h3>A graphic designer & a tech buddie </h3>
+               <p> Im a dynamic and multifaceted graphic designer whose creative prowess extends across the full spectrum of design and development where I blend creativity with code, crafting stunning visuals and building innovative software solutions that deliver both beauty and performance. 
+            </p>
+            </aside>
+
+            <article class="content">
+                <h2>Know me in a second</h2>
+                <img src="dd.png" alt="Placeholder Image">
+                <p> Im a dynamic and multifaceted graphic designer whose creative prowess extends across the full spectrum of design and development where I blend creativity with code, crafting stunning visuals and building innovative software solutions that deliver both beauty and performance. 
+                </p>
+            </div>
+            <a href="Dezmils Ezra CV.pdf" Download="Dezmils Ezra Cv.pdf" class="cv">Download cv</a>
+        </div>
+            </article>
+        
+        </main>
+    
     </div>
-  
-</body>
-    <script src="script.js"></script>
+
+    <footer>
+        <h6>&copy; Dezmils Ezra portfolio 2025</h6>
+        <h6>follow me on</h6>
+        <ul>
+           <li><a href="https://www.facebook.com/profile.php?id=61551077543227&mibextid=rS40aB7S9Ucbxw6v"><i class='bx bxl-facebook-circle'> </i></a></li> 
+            <li><a href="https://x.com/DezmilsE"><i class='bx bxl-twitter'> </i></a></li>
+           <li><a href="https://vm.tiktok.com/ZMkoX17Kk/"><i class='bx bxl-tiktok'></i></a></li>
+            <li><a href="https://www.linkedin.com/in/dezmil-ezra-578906317?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class='bx bxl-linkedin'></i> </a> </li>
+           <li><a href="https://www.instagram.com/dezmils_ezra/?hl=en"><i class='bx bxl-instagram-alt' ></i> </a></li> 
+        </ul>
+    </footer>
 </body>
 </html>
